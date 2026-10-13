@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter: No Auto-Translate",
+  "description": "מחזיר אוטומטית את הטקסט המקורי בציוצים שטוויטר תרגם (למשל מעברית לאנגלית).",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
